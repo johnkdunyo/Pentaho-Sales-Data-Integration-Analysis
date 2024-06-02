@@ -11,8 +11,17 @@ The goal of this project is to develop a comprehensive data integration and anal
 
 ## Project Repo Structure
 
+1. **docker-compose.yaml**: This file contains the configuration for Docker Compose, which is used to orchestrate multiple Docker containers. It defines three services:
+
+   - `source_system`: The source system's MySQL database.
+
+2. **source_system_init/AdventureWorks2019.sql**: This SQL script initializes the source system's database with sample data and appropriate schema.
+
 ## How It Works
 
 ## Running the Project
 
 1. Clone this repository.
+1. Ensure you have Docker and Docker Compose installed on your machine.
+1. Navigate to the root repository directory and run `docker-compose up`.
+1. you can access the source (MySQL) databases on ports 3306.
