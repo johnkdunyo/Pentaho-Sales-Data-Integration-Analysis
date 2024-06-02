@@ -5,9 +5,26 @@ services:
     image: mysql:latest
     ports:
       - "3306:3306"
+    networks:
+      - pentaho_network
     environment:
       MYSQL_ROOT_PASSWORD: secret
       MYSQL_DATABASE: adventure_works
       MYSQL_PASSWORD: secret
     volumes:
       - ./source_system_init/AdventureWorks2019.sql:/docker-entrypoint-initdb.d/init.sql
+
+  sink_system:
+    image: postgres:latest
+    ports:
+      - "5434:5432"
+    networks:
+      - pentaho_network
+    environment:
+      POSTGRES_DB: sink_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: secret
+
+networks:
+  pentaho_network:
+    driver: bridge

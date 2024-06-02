@@ -15,7 +15,7 @@ The goal of this project is to develop a comprehensive data integration and anal
 
    - `source_system`: The source system's MySQL database.
 
-2. **source_system_init/AdventureWorks2019.sql**: This SQL script initializes the source system's database with sample data and appropriate schema.
+2. **source_system_init/AdventureWorks2019.sql**: This SQL script initializes the source and sink system's databases with sample data and appropriate schema.
 
 ## How It Works
 
@@ -24,4 +24,4 @@ The goal of this project is to develop a comprehensive data integration and anal
 1. Clone this repository.
 1. Ensure you have Docker and Docker Compose installed on your machine.
 1. Navigate to the root repository directory and run `docker-compose up`.
-1. you can access the source (MySQL) databases on ports 3306.
+1. you can access the source (MySQL) and sink (PostgreSQL) databases on ports 3306 and 5434 respectively.
