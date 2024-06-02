@@ -24,4 +24,4 @@ The goal of this project is to develop a comprehensive data integration and anal
 1. Clone this repository.
 1. Ensure you have Docker and Docker Compose installed on your machine.
 1. Navigate to the root repository directory and run `docker-compose up`.
-1. you can access the source (MySQL) and sink (PostgreSQL) databases on ports 3306 and 5434 respectively.
+1. you can access the source (MySQL) and sink (PostgreSQL) databases on ports 3306 and 5434 respectively. Check **docker-compose.yml** for connection credentials
