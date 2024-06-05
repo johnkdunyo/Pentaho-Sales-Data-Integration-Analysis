@@ -11,9 +11,10 @@ The goal of this project is to develop a comprehensive data integration and anal
 
 ## Project Repo Structure
 
-1. **docker-compose.yaml**: This file contains the configuration for Docker Compose, which is used to orchestrate multiple Docker containers. It defines three services:
+1. **docker-compose.yaml**: This file contains the configuration for Docker Compose, which is used to orchestrate multiple Docker containers. It defines two (2) services:
 
    - `source_system`: The source system's MySQL database.
+   - `sink_system`: The sink system's PostgreSQL database.
 
 2. **source_system_init/AdventureWorks2019.sql**: This SQL script initializes the source and sink system's databases with sample data and appropriate schema.
 
